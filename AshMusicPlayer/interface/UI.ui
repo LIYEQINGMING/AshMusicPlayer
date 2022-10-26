@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_window</class>
+ <widget class="QMainWindow" name="main_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255, 255, 255)</string>
+  </property>
+  <widget class="QWidget" name="background">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>612</width>
+     <height>368</height>
+    </size>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(163, 167, 130);</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QWidget" name="left_widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>177</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>177</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="mid_base_widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>650</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(197, 218, 169);</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>6</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QWidget" name="mid_up_widget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>650</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(104, 104, 104);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QWidget" name="mid_mian_widget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>650</width>
+           <height>360</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(108, 128, 193);</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3" rowstretch="0">
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
+          </property>
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="minimumSize">
+             <size>
+              <width>650</width>
+              <height>340</height>
+             </size>
+            </property>
+            <property name="lineWidth">
+             <number>1</number>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>680</width>
+               <height>1700</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>650</width>
+               <height>1700</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(238, 215, 255);</string>
+             </property>
+             <widget class="QWidget" name="recommend_item" native="true">
+              <property name="geometry">
+               <rect>
+                <x>9</x>
+                <y>9</y>
+                <width>650</width>
+                <height>250</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>650</width>
+                <height>250</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="1" column="0">
+                <widget class="QWidget" name="item_mian_widget_2" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>500</width>
+                   <height>180</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(85, 0, 0);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_7">
+                  <item row="0" column="1">
+                   <widget class="QWidget" name="info_widget" native="true">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>400</width>
+                      <height>200</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="cover">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>image</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="minirecommend_item_3" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>830</y>
+                <width>650</width>
+                <height>274</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>650</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="0" column="0">
+                <widget class="QWidget" name="title_widget" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>600</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(126, 255, 240);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_9">
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="pushButton_8">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton_9">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <spacer name="horizontalSpacer_2">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QWidget" name="details_widget" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>600</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(85, 0, 0);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_10">
+                  <item row="0" column="2">
+                   <widget class="QWidget" name="widget_6" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_10">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QWidget" name="widget_7" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_11">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QWidget" name="widget_8" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_12">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QWidget" name="widget_9" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_13">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QWidget" name="widget_10" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_14">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="minirecommend_item_1" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>260</y>
+                <width>650</width>
+                <height>274</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>650</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <widget class="QWidget" name="title_widget_3" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>600</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(126, 255, 240);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_13">
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="pushButton_22">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton_23">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <spacer name="horizontalSpacer_4">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QWidget" name="details_widget_3" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>600</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(85, 0, 0);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_14">
+                  <item row="0" column="2">
+                   <widget class="QWidget" name="widget_16" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_24">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QWidget" name="widget_17" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_25">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QWidget" name="widget_18" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_26">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QWidget" name="widget_19" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_27">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QWidget" name="widget_20" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_28">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="minirecommend_item_4" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>1120</y>
+                <width>650</width>
+                <height>274</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>650</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_23">
+               <item row="0" column="0">
+                <widget class="QWidget" name="title_widget_4" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>600</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(126, 255, 240);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_15">
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="pushButton_29">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton_30">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <spacer name="horizontalSpacer_5">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QWidget" name="details_widget_4" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>600</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(85, 0, 0);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_16">
+                  <item row="0" column="2">
+                   <widget class="QWidget" name="widget_21" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_31">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QWidget" name="widget_22" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_32">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QWidget" name="widget_23" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_33">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QWidget" name="widget_24" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_34">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QWidget" name="widget_25" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_35">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="minirecommend_item_2" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>540</y>
+                <width>650</width>
+                <height>274</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>650</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_6">
+               <item row="0" column="0">
+                <widget class="QWidget" name="title_widget_6" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>600</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(126, 255, 240);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_19">
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="pushButton_43">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton_44">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <spacer name="horizontalSpacer_7">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QWidget" name="details_widget_6" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>600</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(85, 0, 0);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_20">
+                  <item row="0" column="2">
+                   <widget class="QWidget" name="widget_31" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_45">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QWidget" name="widget_32" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_46">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QWidget" name="widget_33" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_47">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QWidget" name="widget_34" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_48">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QWidget" name="widget_35" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_49">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="minirecommend_item_5" native="true">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>1410</y>
+                <width>650</width>
+                <height>274</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>650</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_24">
+               <item row="0" column="0">
+                <widget class="QWidget" name="title_widget_7" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>600</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(126, 255, 240);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_21">
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="pushButton_50">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton_51">
+                    <property name="text">
+                     <string>PushButton</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <spacer name="horizontalSpacer_8">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>40</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QWidget" name="details_widget_7" native="true">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>600</width>
+                   <height>200</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(85, 0, 0);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_22">
+                  <item row="0" column="2">
+                   <widget class="QWidget" name="widget_36" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_52">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QWidget" name="widget_37" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_53">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QWidget" name="widget_38" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_54">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QWidget" name="widget_39" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_55">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item row="0" column="4">
+                   <widget class="QWidget" name="widget_40" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(136, 136, 136);</string>
+                    </property>
+                    <widget class="QPushButton" name="pushButton_56">
+                     <property name="geometry">
+                      <rect>
+                       <x>9</x>
+                       <y>109</y>
+                       <width>75</width>
+                       <height>23</height>
+                      </rect>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QWidget" name="bottom_widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>427</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(99, 106, 171);</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
